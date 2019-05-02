@@ -1,0 +1,24 @@
+{
+    "T00":{
+        "test":"Open Url",
+        "action":"get",
+        "data":"https://www.google.com"
+    },
+    "T01":{
+        "test":"Type ViaDialog in search bar",
+        "action":"type",
+        "path":"//*[@id='tsf']/div[2]/div/div[1]/div/div[1]/input",
+        "data":"viadialog"
+    },
+    "T02":{
+        "test":"run search",
+        "action":"click",
+        "path":"//*[@id='tsf']/div[2]/div/div[3]/center/input[1]"
+    },
+    "T03":{
+        "test":"check if 1st result land to https://www.viadialog.com",
+        "action":"specExoViaDialog",
+        "path":"//*[@id='rso']/div[1]/div/div[1]/div/div/div[1]/a/div/cite",
+        "value":"https://www.viadialog.com/"
+    }
+}
